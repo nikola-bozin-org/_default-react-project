@@ -2,7 +2,17 @@ import {BrowserRouter as Router, Route,Routes,Navigate} from 'react-router-dom'
 import Homepage from './pages/Homepage';
 import Test from './pages/Test';
 import E404 from './pages/E404';
+import { useEffect } from 'react';
+import Aos from 'aos';
+import "aos/dist/aos.css";
+
+
 function App() {
+
+  useEffect(()=>{
+    Aos.init({duration:1000})
+  },[])
+
   return (
     <Router>
     <Routes>
