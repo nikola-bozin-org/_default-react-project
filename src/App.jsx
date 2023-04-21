@@ -10,7 +10,7 @@ function App() {
   },[])
 
   return (
-    <div data-aos='fade-down' className='app'>
+    <div data-aos='fade-in' className='app'>
       App
     </div>
   );
